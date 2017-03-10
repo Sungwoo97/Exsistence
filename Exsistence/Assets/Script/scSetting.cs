@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class scSetting : MonoBehaviour
 {
-    float ambientValue = 0f;
-    float soundValue = 0f;
+    static float ambientValue = 0f;
 
     private void OnGUI()
     {
