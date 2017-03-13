@@ -28,6 +28,9 @@ public class scRunner : MonoBehaviour {
         if (true)
         {
             evt.Run();
+            scGameManager.instance.eventIndex++;
+            evtidx++;
+            Debug.Log(scGameManager.instance.eventIndex);
         }
     }
 }
