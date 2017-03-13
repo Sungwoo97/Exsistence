@@ -46,7 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\scCamera.cs" />
      <Compile Include="Assets\Script\scExample.cs" />
+     <Compile Include="Assets\Script\scPhone.cs" />
+     <Compile Include="Assets\Script\scPlayer.cs" />
+     <Compile Include="Assets\Script\scSceneMove.cs" />
+     <Compile Include="Assets\Script\scSetting.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
