@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class SCobjHUD : MonoBehaviour {
     public TextMesh hudText;
-    public float objside = 5.0f;
+    public float objside;
     public bool interaction = false;
     private Transform interactionTr;
     private Transform playerTr;
     private MeshRenderer interactionMesh;
+    private CapsuleCollider playerRd;
 	// Use this for initialization
 	void Start () {
         interactionTr = GameObject.Find("interaction").transform;
-        playerTr = GameObject.Find("Sphere").transform;
+        playerTr = GameObject.Find("Capsule").transform;
         interactionMesh = GameObject.Find("interaction").GetComponent<MeshRenderer>();
         interactionMesh.enabled = false;
+        playerRd = GameObject.Find("Capsule").GetComponent<CapsuleCollider>();
+        objside = playerRd.radius;
     }
 
     // Update is called once per frame
