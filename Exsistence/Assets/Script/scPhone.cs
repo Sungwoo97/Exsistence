@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class scPhone : MonoBehaviour {
+    public bool play = true;
     GameObject phone;
     private int iphone = 0;
     // Use this for initialization
@@ -12,13 +13,15 @@ public class scPhone : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (play)
         {
-            if (iphone == 0)
-            { phone.SetActiveRecursively(true); iphone = 1; }
-            else
-            { phone.SetActiveRecursively(false); iphone = 0; }
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                if (iphone == 0)
+                { phone.SetActiveRecursively(true); iphone = 1; }
+                else
+                { phone.SetActiveRecursively(false); iphone = 0; }
+            }
         }
-        
     } 
 }

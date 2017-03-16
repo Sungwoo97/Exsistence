@@ -46,17 +46,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
      <Compile Include="Assets\Script\scCamera.cs" />
-     <Compile Include="Assets\Script\scExample.cs" />
-     <Compile Include="Assets\Script\scPhone.cs" />
-     <Compile Include="Assets\Script\scPlayer.cs" />
-=======
      <Compile Include="Assets\Script\scEventFirst.cs" />
+     <Compile Include="Assets\Script\scEventSecond.cs" />
      <Compile Include="Assets\Script\scExample.cs" />
      <Compile Include="Assets\Script\scGameManager.cs" />
+     <Compile Include="Assets\Script\scPhone.cs" />
+     <Compile Include="Assets\Script\scPlayer.cs" />
      <Compile Include="Assets\Script\scRunner.cs" />
->>>>>>> origin/master
      <Compile Include="Assets\Script\scSceneMove.cs" />
      <Compile Include="Assets\Script\scSetting.cs" />
  <Reference Include="UnityEngine.UI">
