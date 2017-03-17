@@ -6,7 +6,7 @@ public class scRunner : MonoBehaviour {
 
     iEvent evt;
     public int evtidx = 0;  //이벤트 인덱스 변수
-    scSound Sound;
+    scSound Sound ;
 	// Use this for initialization
 	void Awake () {
         Sound = gameObject.GetComponent<scSound>();
