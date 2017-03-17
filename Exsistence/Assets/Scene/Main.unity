@@ -324,7 +324,7 @@ Transform:
   m_GameObject: {fileID: 423383090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 20, y: 2, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -340,6 +340,8 @@ GameObject:
   - component: {fileID: 524270630}
   - component: {fileID: 524270629}
   - component: {fileID: 524270628}
+  - component: {fileID: 524270632}
+  - component: {fileID: 524270633}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -411,6 +413,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524270632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524270627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33abd7a54b3c20649945f418c8971df1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evtidx: 0
+--- !u!54 &524270633
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524270627}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &649897289
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,11 +741,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1098309874}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5258455, y: 1, z: 1.5273163}
+  m_Center: {x: -0.2629231, y: 0, z: 0.26365754}
 --- !u!1 &1579985015
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +820,7 @@ GameObject:
   - component: {fileID: 1831374701}
   - component: {fileID: 1831374700}
   - component: {fileID: 1831374699}
+  - component: {fileID: 1831374703}
   m_Layer: 0
   m_Name: Object
   m_TagString: Untagged
@@ -862,3 +892,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1831374703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1831374698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4ba8c05426874489f9091d8ca58ed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  SoundClip: {fileID: 8300000, guid: bf415b63ebb6a9a4e9878d21d7c9ffb7, type: 3}
+  soundMinDistance: 6.17
+  soundMaxDistance: 26.94
+  rangeSet: 0
