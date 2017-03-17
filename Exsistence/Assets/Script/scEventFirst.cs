@@ -5,7 +5,7 @@ using UnityEngine;
 public class scEventFirst : MonoBehaviour , iEvent{
 
     public scRunner Runner;
-
+    public scSound Sound;
     // Use this for initialization
     void Start () {
         Runner.SetEvent(this);
@@ -18,7 +18,9 @@ public class scEventFirst : MonoBehaviour , iEvent{
 
     public void Run()
     {
-        Debug.Log("이벤트 실행 됨");
+        //Debug.Log("이벤트 실행 됨");
+        
+
     }
 
 }
