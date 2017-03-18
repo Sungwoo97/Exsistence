@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class scPlayer : MonoBehaviour {
-    public bool play = true;
+    public static bool play = true;
 	private float h = 0.0f;
 	private float v = 0.0f;
 	private Transform tr;
@@ -32,6 +32,28 @@ public class scPlayer : MonoBehaviour {
                 { flashlight.SetActiveRecursively(true); iflashlight = 1; }
                 else
                 { flashlight.SetActiveRecursively(false); iflashlight = 0; }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && scSceneMove.EnableCreateMenu)
+        {
+            scSceneMove.EnableCreateMenu = false;
+            play = false;
+
+            GameObject canvas = Resources.Load("Prefabs/PauseCanvas") as GameObject;
+            Instantiate(canvas, new Vector3(0, 0, 0), Quaternion.identity);
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && !scSceneMove.EnableCreateMenu)
+        {
+            if(GameObject.Find("SettingCanvas(Clone)"))
+            {
+                Destroy(GameObject.Find("SettingCanvas(Clone)"));
+            }
+            else
+            {
+                scSceneMove.EnableCreateMenu = true;
+                play = true;
+                Destroy(GameObject.Find("PauseCanvas(Clone)"));
             }
         }
     }

@@ -34,7 +34,7 @@ public class scRunner : MonoBehaviour {
             Debug.Log(scGameManager.instance.eventIndex);
         }
     }
-
+    
     void OnTriggerEnter(Collider coll)
     {
         Debug.Log("Triger 충돌하였음");
