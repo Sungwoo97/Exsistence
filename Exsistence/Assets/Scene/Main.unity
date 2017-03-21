@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.44988453, g: 0.49994552, b: 0.5755682, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 649897290}
   - component: {fileID: 649897294}
   m_Layer: 0
-  m_Name: Capsule_2
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -816,13 +816,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1556322299}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.6}
+  m_LocalRotation: {x: 0.3362865, y: -0, z: -0, w: 0.94175977}
+  m_LocalPosition: {x: 0, y: 8.02, z: -10.6}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 39.302002, y: 0, z: 0}
 --- !u!1 &1831374698
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +919,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio: {fileID: 0}
   SoundClip: {fileID: 8300000, guid: bf415b63ebb6a9a4e9878d21d7c9ffb7, type: 3}
+  soundName: 
   soundMinDistance: 6.17
   soundMaxDistance: 26.94
+  soundVolume: 1
+  loopSet: 0
   rangeSet: 0

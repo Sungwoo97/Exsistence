@@ -75,9 +75,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\SCobjHUD.cs" />
     <Compile Include="Assets\Script\TestLab.cs" />
     <Compile Include="Assets\Script\scCamera.cs" />
     <Compile Include="Assets\Script\scEventFirst.cs" />
+    <Compile Include="Assets\Script\scEventLight.cs" />
+    <Compile Include="Assets\Script\scEventMove.cs" />
     <Compile Include="Assets\Script\scEventSecond.cs" />
     <Compile Include="Assets\Script\scExample.cs" />
     <Compile Include="Assets\Script\scGameManager.cs" />

@@ -6,14 +6,15 @@ public class scRunner : MonoBehaviour {
 
     iEvent evt;
     public int evtidx = 0;  //이벤트 인덱스 변수
-    scSound Sound ;
 	// Use this for initialization
 	void Awake () {
-        Sound = gameObject.GetComponent<scSound>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -40,7 +41,6 @@ public class scRunner : MonoBehaviour {
         Debug.Log("Triger 충돌하였음");
         if(true)
         {
-            Sound.soundRun();
             scGameManager.instance.eventIndex++;
             evtidx++;
         }
