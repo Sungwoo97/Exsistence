@@ -5,11 +5,9 @@ using UnityEngine;
 public class scCamera : MonoBehaviour {
     private Transform tr;
     public float rotSpeed = 100.0f;
-    public bool play = true;
     // Use this for initialization
     void Start () {
         tr = GetComponent<Transform>();
-        Cursor.visible = false;
     }
 	
 	// Update is called once per frame
@@ -26,14 +24,14 @@ public class scCamera : MonoBehaviour {
                 Cursor.visible = true;
 
         }*/
-        if (play)
+        if (scPlayer.play && scPhone.play)
         {
             if (tr.rotation.x <= 0.45f && tr.rotation.x >= -0.45f)
             {
                 tr.Rotate(Vector3.left * Time.deltaTime * rotSpeed * Input.GetAxis("Mouse Y")); //x -45~45
             }
             else if (tr.rotation.x > 0.45f) tr.rotation = Quaternion.Euler(45, 0, 0);
-            else tr.rotation = Quaternion.Euler(45, 0, 0);
+            else tr.rotation = Quaternion.Euler(-45, 0, 0);
         }
     }
 }

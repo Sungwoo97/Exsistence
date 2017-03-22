@@ -11,6 +11,7 @@ public class scPlayer : MonoBehaviour {
 	public float rotSpeed = 100.0f;
     GameObject flashlight;
     private int iflashlight = 0;
+  
     // Use this for initialization
     void Start () {
 		tr = GetComponent<Transform>();
@@ -19,13 +20,14 @@ public class scPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+                
         if (play)
         {
             h = Input.GetAxis("Horizontal");
             v = Input.GetAxis("Vertical");
             Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
             tr.Translate(moveDir * Time.deltaTime * moveSpeed, Space.Self);
-            tr.Rotate(Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis("Mouse X"));
+            if(scPhone.play) tr.Rotate(Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis("Mouse X"));
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 if (iflashlight == 0)

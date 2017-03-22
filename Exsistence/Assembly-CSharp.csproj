@@ -46,8 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\SCobjHUD.cs" />
+     <Compile Include="Assets\Script\TestLab.cs" />
      <Compile Include="Assets\Script\scCamera.cs" />
+     <Compile Include="Assets\Script\scCanvas.cs" />
      <Compile Include="Assets\Script\scEventFirst.cs" />
+     <Compile Include="Assets\Script\scEventLight.cs" />
+     <Compile Include="Assets\Script\scEventMove.cs" />
      <Compile Include="Assets\Script\scEventSecond.cs" />
      <Compile Include="Assets\Script\scExample.cs" />
      <Compile Include="Assets\Script\scGameManager.cs" />
@@ -56,6 +61,7 @@
      <Compile Include="Assets\Script\scRunner.cs" />
      <Compile Include="Assets\Script\scSceneMove.cs" />
      <Compile Include="Assets\Script\scSetting.cs" />
+     <Compile Include="Assets\Script\scSound.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
