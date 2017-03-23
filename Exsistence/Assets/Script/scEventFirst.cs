@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 작성자 : 우신현
+
 public class scEventFirst : MonoBehaviour , iEvent{
 
     public scRunner Runner;
@@ -18,9 +20,7 @@ public class scEventFirst : MonoBehaviour , iEvent{
 
     public void Run()
     {
-        Debug.Log("이벤트 실행 됨");
-        
-
+        Debug.Log("first 이벤트 실행 됨");
     }
 
 }

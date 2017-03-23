@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 작성자 : 우신현
+
 public class scEventSecond : MonoBehaviour, iEvent {
 
     public scRunner Runner;
@@ -9,7 +11,6 @@ public class scEventSecond : MonoBehaviour, iEvent {
     // Use this for initialization
     void Start () {
         Runner.SetEvent(this);
-        Runner.evtidx++;
     }
 	
 	// Update is called once per frame
@@ -19,6 +20,6 @@ public class scEventSecond : MonoBehaviour, iEvent {
 
     public void Run()
     {
-        Debug.Log("이벤트 실행 됨2");
+        Debug.Log("second 이벤트 실행 됨");
     }
 }
