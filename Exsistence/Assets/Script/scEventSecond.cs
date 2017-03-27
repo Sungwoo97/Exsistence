@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class scEventSecond : MonoBehaviour, iEvent {
 
-    public scRunner Runner;
+    public scEventRunner Runner;
 
     // Use this for initialization
     void Start () {

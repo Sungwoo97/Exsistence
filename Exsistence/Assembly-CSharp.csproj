@@ -53,6 +53,7 @@
      <Compile Include="Assets\Script\scEventFirst.cs" />
      <Compile Include="Assets\Script\scEventLight.cs" />
      <Compile Include="Assets\Script\scEventMove.cs" />
+     <Compile Include="Assets\Script\scEventRunner.cs" />
      <Compile Include="Assets\Script\scEventRunnerLogic.cs" />
      <Compile Include="Assets\Script\scEventRunnerTime.cs" />
      <Compile Include="Assets\Script\scEventSecond.cs" />
@@ -60,7 +61,6 @@
      <Compile Include="Assets\Script\scGameManager.cs" />
      <Compile Include="Assets\Script\scPhone.cs" />
      <Compile Include="Assets\Script\scPlayer.cs" />
-     <Compile Include="Assets\Script\scRunner.cs" />
      <Compile Include="Assets\Script\scSceneMove.cs" />
      <Compile Include="Assets\Script\scSetting.cs" />
      <Compile Include="Assets\Script\scSound.cs" />

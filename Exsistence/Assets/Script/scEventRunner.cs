@@ -4,7 +4,7 @@ using UnityEngine;
 
 // 작성자 : 우신현
 
-public class scRunner : MonoBehaviour {
+public class scEventRunner : MonoBehaviour {
 
     iEvent evt;
     public int evtidx;  //이벤트 인덱스 변수
