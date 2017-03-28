@@ -1,24 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class scPhone : MonoBehaviour {
-    GameObject phone;
-    private int iphone = 0;
+public class scPhone : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
+{
+    public static bool play = true;
+
+    public void OnPointerEnter(PointerEventData data)
+    {
+        Debug.Log("MouseOver");
+        play = false;
+        Cursor.visible = true;
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Cursor.visible = false;
+        play = true;
+    }
+
     // Use this for initialization
     void Start () {
-        phone = transform.Find("phone").gameObject;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            if (iphone == 0)
-            { phone.SetActiveRecursively(true); iphone = 1; }
-            else
-            { phone.SetActiveRecursively(false); iphone = 0; }
-        }
-        
-    } 
+
+    }
 }
