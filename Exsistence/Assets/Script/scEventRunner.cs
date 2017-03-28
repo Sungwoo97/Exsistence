@@ -4,12 +4,13 @@ using UnityEngine;
 
 // 작성자 : 우신현
 
-public class scRunner : MonoBehaviour {
+public class scEventRunner : MonoBehaviour {
 
     iEvent evt;
     public int evtidx;  //이벤트 인덱스 변수
+    public bool MainEvent = true;  //메인 이벤트, 서브 이벤트 구분 변수
 
-	void Awake () { }
+    void Awake () { }
     void Start () { }
     void Update () {    }
 
@@ -20,17 +21,22 @@ public class scRunner : MonoBehaviour {
 
     void OnTriggerEnter(Collider coll)    //충돌처리
     {
-        Debug.Log("충돌하였음"); 
+        Debug.Log("충돌하였음");
+        
         Debug.Log(evtidx);
         Debug.Log(scGameManager.instance.eventIndex);
+        
 
         if (evtidx == scGameManager.instance.eventIndex)
         {
             evt.Run();
+
+            if (MainEvent)
+            { scGameManager.instance.eventIndex++; }
             
-            scGameManager.instance.eventIndex++;
             Debug.Log("GameManager의 eventIndex : " + scGameManager.instance.eventIndex);
             Debug.Log("Runner의 evtidx : " + evtidx);
+            
         }
     }
 }

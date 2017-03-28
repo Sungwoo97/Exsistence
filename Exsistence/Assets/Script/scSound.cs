@@ -5,7 +5,7 @@ using UnityEngine;
 public class scSound : MonoBehaviour, iEvent
 {
     
-    scRunner Runner;
+    scEventRunner Runner;
     public AudioSource audio; //
     public AudioClip SoundClip;
     public string soundName = null;
